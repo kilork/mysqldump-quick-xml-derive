@@ -1,6 +1,6 @@
 [package]
 name = "mysqldump-quick-xml-derive"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Alexander Korolev <alexander.korolev@wirecard.com>"]
 license = "Unlicense OR MIT"
 description = """
@@ -10,7 +10,7 @@ readme = "README.md"
 homepage = "https://github.com/kilork/mysqldump-quick-xml-derive"
 repository = "https://github.com/kilork/mysqldump-quick-xml-derive"
 keywords = ["mysql", "mysqldump", "parser", "macros", "derive"]
-categories = ["parser", "xml", "mysql"]
+categories = ["database", "parsing"]
 edition = "2018"
 
 [dependencies]
