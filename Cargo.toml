@@ -1,7 +1,7 @@
 [package]
 name = "mysqldump-quick-xml-derive"
-version = "0.1.1"
-authors = ["Alexander Korolev <alexander.korolev@wirecard.com>"]
+version = "0.1.2"
+authors = ["Alexander Korolev <kilork@yandex.ru>"]
 license = "Unlicense OR MIT"
 description = """
 A derive macro to convert from mysqldump in xml format to struct using quick-xml.
