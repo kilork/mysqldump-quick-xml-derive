@@ -48,13 +48,6 @@ pub fn mysqldump_quick_xml(input: proc_macro::TokenStream) -> proc_macro::TokenS
                 loop {
                     match reader.read_event(&mut buf) {
                         Ok(Event::Start(ref e)) => match e.name() {
-                            b"row" => {
-                                if current_field.is_some() {
-                                    #fields_set_none
-
-                                    current_field = None;
-                                }
-                            }
                             b"field" => {
                                 let field = e
                                     .attributes()
@@ -76,6 +69,7 @@ pub fn mysqldump_quick_xml(input: proc_macro::TokenStream) -> proc_macro::TokenS
                                 rows.push(Self {
                                     #fields_set
                                 });
+                                #fields_set_none
                             }
                             b"field" => {
                                 current_field = None;

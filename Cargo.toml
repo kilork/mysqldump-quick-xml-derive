@@ -1,6 +1,6 @@
 [package]
 name = "mysqldump-quick-xml-derive"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Alexander Korolev <kilork@yandex.ru>"]
 license = "Unlicense OR MIT"
 description = """
